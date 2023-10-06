@@ -26,7 +26,7 @@ public class LoginPage extends PageObject {
     }
 
     public void enterPassword (String passwordEnter){
-        driver.findElement(inputPassword);
+        driver.findElement(inputPassword).sendKeys(passwordEnter);
     }
 
     public void clickLoginButton(){

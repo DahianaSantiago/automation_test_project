@@ -8,7 +8,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = "src/test/resources/feature/login_sauce_demo.feature",
-                    glue = "src.test.java.com.dahia.stepdefinitions.LoginStepDefinitions",
+                    glue = "com.dahia.stepdefinitions",
                     snippets = SnippetType.CAMELCASE)
 
 public class LoginSauceDemo {
