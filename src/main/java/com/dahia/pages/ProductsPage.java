@@ -3,9 +3,6 @@ package com.dahia.pages;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class ProductsPage extends PageObject {
@@ -26,5 +23,8 @@ public class ProductsPage extends PageObject {
         assertTrue(driver.findElement(elementValidation).isDisplayed());
         String validationText = driver.findElement(elementValidation).getText();
         System.out.println(validationText);
+        String cutText = driver.findElement(elementValidation).getText();
+        String cadText = cutText.substring(4,8);
+        System.out.println(cadText);
     }
 }
